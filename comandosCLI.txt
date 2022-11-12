@@ -1,0 +1,27 @@
+COMANDOS CON FOREVER:
+
+forever start server.js -p 3000 fork
+forever list
+get-process
+forever stop 4320
+ kill 4320
+get-process
+forever stopall
+
+---------
+
+COMANDOS CON PM2
+pm2 start server.js -p 3000
+pm2 start server.js -i max
+pm2 list
+pm2 monit
+pm2 status
+
+NGINX 
+
+node server.js --port 8080 --fork 
+node server.js --port 8081 --cluster 
+node server.js --port 8082 --cluster 
+node server.js --port 8083 --cluster 
+node server.js --port 8084
+
